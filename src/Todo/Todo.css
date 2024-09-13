@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+	/* text-transform: capitalize; */
+}
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(100deg, #001214, #001f29);
+}
+
+.todo-container {
+	min-height: 100vh;
+	padding-top: 3%;
+	color: white;
+	transition: 0.3s linear;
+	overflow: hidden;
+}
+
+.header,
+.form {
+	margin: 0 1rem;
+	min-height: 10vh;
+	width: 100%;
+}
+
+.header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 3rem;
+	min-height: 25vh;
+	width: 100%;
+}
+
+section h1 {
+	color: #fff;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	font-size: 1rem;
+	justify-content: center;
+	margin: 15px 0;
+}
+
+.todo-input {
+	width: 300px;
+	padding: 12px;
+	letter-spacing: 0.1rem;
+	border: none;
+	outline: none;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	transition: background-color 200ms ease-in-out;
+	background-color: #f2f3f4;
+	color: #000;
+}
+
+.todo-input:hover {
+	cursor: text;
+}
+
+.todo-input:focus {
+	outline: none;
+}
+
+.todo-input::placeholder {
+	color: white;
+	opacity: 0.7;
+}
+
+.todo-btn {
+	border: none;
+	outline: none;
+	transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+	background-color: #2c3e50;
+	color: #000;
+	padding: 12px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	background-color: #5dade2;
+}
+
+.todo-btn:hover {
+	cursor: pointer;
+	background-color: #f1c40f;
+}
+
+.todo-item {
+	font-size: 1rem;
+	color: #000000;
+	transition: background-color 200ms ease-in-out;
+	background-color: #f2f3f4;
+	min-width: 25rem;
+	max-width: 27rem;
+	padding: 0.5rem;
+	border-radius: 7px;
+}
+
+.date_time {
+	font-size: 10px;
+}
+
+#search {
+	border: none;
+	padding: 6px 12px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+}
+
+.checkList {
+	text-decoration: line-through;
+	color: #494949;
+	margin-left: 10px;
+}
+
+.notCheckList {
+	text-decoration: none;
+	margin-left: 10px;
+}
