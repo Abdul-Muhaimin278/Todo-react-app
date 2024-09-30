@@ -32,7 +32,7 @@ export default function Todo() {
 		setSearchInput(searchTerm);
 
 		const filteredItems = todo.filter((task) =>
-			task.content.toLowerCase().startsWith(searchTerm.toLowerCase())
+			task.content.toLowerCase().includes(searchTerm.toLowerCase())
 		);
 		// console.log(filteredItems);
 
@@ -55,6 +55,7 @@ export default function Todo() {
 					name="search"
 					id="search"
 					className="mx-1"
+					placeholder="Enter to search todos"
 					value={searchInput}
 					onChange={handleSearchInput}
 				/>
